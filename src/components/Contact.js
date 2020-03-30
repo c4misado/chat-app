@@ -7,7 +7,7 @@ class Contact extends React.Component {
             <div className="Contact" >
                 <img className="avatar" src={this.props.image}/>
                 <div><p className="name">{this.props.firstName} {this.props.lastName}</p>
-                <div className="status"><span className="status-offline"></span>
+                <div className="status"><span className="status-online"></span>
                 <p className="status-text">{this.props.onlineStatus}</p></div>
             </div></div>
         )
