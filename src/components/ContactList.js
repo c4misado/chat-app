@@ -28,7 +28,7 @@ const users = [
     }
   ];
 
- class ContactList extends React.Component{
+ /* class ContactList extends React.Component{
     render () {
         return (
             <ul>
@@ -36,6 +36,6 @@ const users = [
             </ul>
         )
     }
-}
+} */
 
-export default ContactList;
+export default users;
