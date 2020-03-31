@@ -6,11 +6,14 @@ class Contact extends React.Component {
         return (
             <div className="Contact" >
                 <img className="avatar" src={this.props.image}/>
-                <div><p className="name">{this.props.firstName} {this.props.lastName}</p>
-                <div className="status"><span className="status-online"></span>
-                <p className="status-text">{this.props.onlineStatus}</p></div>
+                <div className="fn"><p className="name">{this.props.firstName} {this.props.lastName}</p>            
+                <div className="status"><div className={this.props.online ? 'status-online' : 'status-offline'}></div>
+                <p className="status-text">{this.props.online ? 'online' : 'offline'}</p></div>
+
             </div></div>
         )
     }
 };
 export default Contact;
+
+//<div className="status-online"></div>
