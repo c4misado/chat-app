@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './Contact';
 
 const users = [
     {
@@ -28,14 +29,15 @@ const users = [
     }
   ];
 
- /* class ContactList extends React.Component{
+ class ContactList extends React.Component{
     render () {
         return (
-            <ul>
-                {users.map(user => <li key={user.name}>{user.name}</li>)}
-            </ul>
-        )
+    <div>
+        {users.map(user => (
+         <Contact name={user.name} avatar={user.avatar} online={user.online}/>))}
+    </div>
+        );
     }
-} */
+}
 
-export default users;
+export default ContactList;
