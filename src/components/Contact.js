@@ -15,5 +15,3 @@ class Contact extends React.Component {
     }
 };
 export default Contact;
-
-//<div className="status-online"></div>
