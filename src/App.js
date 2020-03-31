@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import PropTypes from 'prop-types';
 import Contact from './components/Contact';
 
 function App() {
@@ -11,5 +11,12 @@ function App() {
     </div>
   );
 }
+
+Contact.propTypes = {
+  firstName: PropTypes.string,
+  lastName: PropTypes.string,
+  image: PropTypes.string,
+  online: PropTypes.bool
+};
 
 export default App;
