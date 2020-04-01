@@ -5,10 +5,12 @@ const users = [
     {
       name: 'Robert Reyes',
       avatar: 'https://randomuser.me/api/portraits/men/28.jpg',
+      online: true
     },
     {
       name: 'Nellie Caldwell',
       avatar: 'https://randomuser.me/api/portraits/women/17.jpg',
+      online: false
     },
     {
       name: 'Vernon Mason',
